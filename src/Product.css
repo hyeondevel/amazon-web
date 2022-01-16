@@ -29,11 +29,13 @@
 }
 
 .product > button{
-    background: #61dafb;
+    background: #f0c14b;
     margin-top: 10px;
-    border: 1px solid;
-    border-color: #8768bf #a5a5f3 #61dafb;
+    border: none;
     color: black;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 .product_info{
