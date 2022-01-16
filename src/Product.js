@@ -21,7 +21,7 @@ function Product(props) {
 
     }
 
-    console.log('바스켓 - ', basket)
+    // console.log('바스켓 - ', basket)
 
     return (
         <div className='product'>
