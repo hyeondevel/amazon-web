@@ -1,5 +1,6 @@
 export const initialState = {
     basket: [],
+    user: null
 };
 
 export const getBasketTotal = (basket) =>  (basket?.reduce((previous, item) => item.price + previous, 0));
@@ -20,7 +21,8 @@ const reducer = (state, action) => {
             const index = state.basket.findIndex((basketItem) =>
                 basketItem.id === action.id
             )
-
+            // findIndex의 한계점 : 가장 먼저 발견한 것만 return
+            // redux를 이용하여 해결가능
             let newBasket = [...state.basket];
 
             if(index >= 0){
@@ -32,6 +34,11 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 basket: newBasket
+            }
+        case 'SET_USER':
+            return{
+                ...state,
+                user: action.user
             }
 
         default:
