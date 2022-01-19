@@ -11,7 +11,9 @@
       - useEffect in app.js
 
 # deploy
-- 주기적 update 필요
+- firebase deploy
+  - Firebase 프로젝트에 배포
+  - 주기적 update 필요
     
 # Caution
 - redux를 이용하여 삭제에서의 오류를 바꿔야한다
