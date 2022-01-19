@@ -9,6 +9,9 @@
 2. logout
     - logout 시에 다른 페이지에서도 동기화
       - useEffect in app.js
+
+# deploy
+- 주기적 update 필요
     
 # Caution
 - redux를 이용하여 삭제에서의 오류를 바꿔야한다
