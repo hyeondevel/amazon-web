@@ -17,3 +17,6 @@
     
 # Caution
 - redux를 이용하여 삭제에서의 오류를 바꿔야한다
+- firebase configure 파일을 작성해줘야한다
+- stripe.js를 사용하기 위해 firebase spark요금제를 Blaze요금제로 변경해야만한다
+  - 구글 결제 프로필설정 중 카드 번호 오류때문에 중단

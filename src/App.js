@@ -8,6 +8,7 @@ import {useEffect} from "react";
 import {onAuthStateChanged } from "firebase/auth";
 import {auth} from "./firebase";
 import {useStateValue} from "./StateProvider";
+import Payment from "./Payment";
 
 function App() {
 
@@ -35,9 +36,9 @@ function App() {
             <div className="App">
                 <Routes>
                     <Route path="/" element={<><Header/><Home/></>}/>
-                    <Route path="/login" element={<Login />}></Route>
-                    <Route path="/checkout" element={<><Header/><Checkout/></>}>
-                    </Route>
+                    <Route path="/login" element={<Login />}/>
+                    <Route path="/checkout" element={<><Header/><Checkout/></>}/>
+                    <Route path="/payment" element={<Payment />}/>
                 </Routes>
             </div>
       </Router>
